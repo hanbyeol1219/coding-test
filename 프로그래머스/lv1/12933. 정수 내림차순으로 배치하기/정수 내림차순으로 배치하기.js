@@ -1,4 +1,4 @@
-function solution(n) {
-    var answer = 0;
-    return answer;
+const solution = (n) => {
+    let answer = n.toString().split('').map(Number).sort((a, b) => b-a).join('');
+    return Number(answer);
 }
