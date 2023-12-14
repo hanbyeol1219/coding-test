@@ -1,0 +1,4 @@
+const solution = (arr, divisor) => {
+    const answer = arr.filter((item)=>item%divisor===0);
+    return answer.length > 0 ? answer.sort((a,b)=>{return a-b}) : [-1];
+}
